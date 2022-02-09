@@ -1,0 +1,40 @@
+Ligar Led vermelho na protoboard
+
+LED significa Light Emitting Diode (Diodo Emissor de Luz). Um LED é usado para a emissão de luz e em instrumentos onde se torna mais 
+conveniente a sua utilização do que a de uma lâmpada.
+
+A Amperagem do LED(vermelho) é de 15 mA*(quinze mili-ampére). E o nosso Arduino emite 40mA, ou seja, corrente suficiente para queimar 
+o nosso LED. Para diminuirmos a quantidade de corrente passando pelo LED, utilizaremos outra peça famosa, o resistor. 
+
+V = R * I
+
+Em nosso circuito, temos a saída do Arduino com 5V. Porém, precisamos contabilizar que ao ligar o LED vermelho, ele também consome um 
+pouco dessa voltagem. Precisamente, o LED vermelho absorve 2V. Substituindo na nossa fórmula, temos:
+
+5-2 = R * I
+3 = R * I
+
+Agora, precisamos olhar para a corrente elétrica(I). Conforme mencionado anteriormente, o Arduino nos fornece uma corrente elétrica de
+40 mA. Porém, não utilizaremos esse valor na fórmula e sim o da corrente final. No caso, a corrente que o LED vermelho necessita é de 
+15mA. Substituindo novamente na nossa fórmula, e realizando a conta, teremos o seguinte:
+
+3 = R * 15mA
+3 = R * 0,015A
+
+
+R = 3 / 0,015
+R = 200 ohm
+
+
+Vimos que a resistência necessária para que os LEDs não queimem é de no mínimo 200 ohm. Entretanto, procurando na lista de resistências
+do Fritzing não encontramos o valor de 200. Como estamos falando de resistência o melhor é errarmos para cima, ou seja, podemos 
+selecionar a primeira resistência após o valor de 200. No Fritzing, essa resistência é a de 220 ohm*. Após isso, basta ligarmos a 
+nossa resistência.
+
+
+
+
+
+
+
+
