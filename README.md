@@ -1,2 +1,2 @@
 # Arduino
- My projects using Arduino
+ My projects utilizing Arduino
